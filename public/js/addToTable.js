@@ -2,8 +2,8 @@ import seeTable from './seeTable.js';
 
 export default function addToTable() {
     const taskList = JSON.parse(localStorage.getItem('taskList')) || [];
-    var addTask = document.getElementById("addTask");
-    var task = addTask.value;
+    var addedTask = document.getElementById("addedTask");
+    var task = addedTask.value;
     if (task.trim() !== "") {
       taskList.push(task);
       localStorage.setItem('taskList', JSON.stringify(taskList));
