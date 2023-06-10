@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta http -equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple ToDo List</title>
-  
+  <link rel="stylesheet" href="public/styles/styles.css">
 </head>
 <body>
   <h1>Simple ToDo List</h1>
   <table id="data-table">
+    <input type="text" id="addTask" placeholder="Añada una tarea">
+    <button onclick="addToTable()">Agregar</button>
     <thead>
       <tr>
         <th>ToDo</th>
@@ -16,9 +21,6 @@
     <tbody>
     </tbody>
   </table>
-  <script src="addToTable.js"></script>
-  <script src="modifyTableEntry.js"></script>
-  <script src="deleteInTable.js"></script>
-  <script src="seeTable.js"></script>
+  <script type="module" src="public/js/index.js"></script>
 </body>
 </html>
