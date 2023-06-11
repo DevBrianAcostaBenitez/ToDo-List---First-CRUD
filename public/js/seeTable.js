@@ -18,8 +18,8 @@ export default function seeTable() {
       optionsCell.classList.add("border-secondary");
       optionsCell.classList.add("border-3");
       taskCell.textContent = task;
-      optionsCell.innerHTML ="<button class='btn btn-primary' onclick='modifyTableEntry(this)'><i class='bi bi-pencil'></i></button>" + 
-      "<button class='btn btn-danger ms-5' onclick='deleteInTable(this)'><i class='bi bi-trash'></i></button>";
+      optionsCell.innerHTML ="<div class='d-flex'><button class='btn btn-primary' onclick='modifyTableEntry(this)'><i class='bi bi-pencil'></i></button>" + 
+      "<button class='btn btn-danger ms-5' onclick='deleteInTable(this)'><i class='bi bi-trash'></i></button></div>";
   })
   
   }
