@@ -8,9 +8,18 @@ export default function seeTable() {
       const row = tableBody.insertRow();
       const taskCell = row.insertCell();
       const optionsCell = row.insertCell();
-  
+      row.classList.add("bg-dark");
+      row.classList.add("border-secondary");
+      row.classList.add("border-3");
+      taskCell.classList.add("ps-3");
+      taskCell.classList.add("border-secondary");
+      taskCell.classList.add("border-3");
+      optionsCell.classList.add("ps-5");
+      optionsCell.classList.add("border-secondary");
+      optionsCell.classList.add("border-3");
       taskCell.textContent = task;
-      optionsCell.innerHTML ="<button onclick='modifyTableEntry(this)'>Modificar</button> <button onclick='deleteInTable(this)'>Eliminar</button>";
+      optionsCell.innerHTML ="<button class='btn btn-primary btn-lg' onclick='modifyTableEntry(this)'><i class='bi bi-pencil'></i></button>" + 
+      "<button class='btn btn-danger ms-5 btn-lg' onclick='deleteInTable(this)'><i class='bi bi-trash'></i></button>";
   })
   
   }
