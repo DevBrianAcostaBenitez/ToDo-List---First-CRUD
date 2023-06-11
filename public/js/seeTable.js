@@ -2,7 +2,6 @@ export default function seeTable() {
   const taskList = JSON.parse(localStorage.getItem('taskList')) || [];
   const tableBody = document.querySelector('#data-table tbody');
   tableBody.innerHTML = '';
-  console.log(taskList)
   
   taskList.forEach((task) => {
       const row = tableBody.insertRow();
